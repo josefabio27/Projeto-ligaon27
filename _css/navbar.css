@@ -1,3 +1,16 @@
+
+/* configuraçao de navbar */
+.navbar{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.restodoconteudo{
+  grid-column: 2/2;
+  background-color: #000;
+text-align: center;
+align-items: center;
+padding-right: 2vw;
+}
 .barraDeNavegaçao {
   overflow: hidden;
   background-color: #000;
@@ -6,7 +19,7 @@
 
 .barraDeNavegaçao a {
   float: left;
-  display: block;
+  display: inline-block;
   color: #fff;
   text-align: center;
   padding: 14px 16px;
