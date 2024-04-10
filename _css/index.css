@@ -9,6 +9,7 @@
 header{
   background-color: black;
   height: 60px;
+  max-width: 100%;
   
   
 }
@@ -22,18 +23,18 @@ margin-right: 1px;
 
 }
 .cesta{
-  width: 9%;
+  width: 10%;
   text-align: center;
   margin-top: 3px;
   height: 90%;
 
 }
 #img-cesta{
-  max-height:60%;
-  max-width: 40%;
+  max-height:6vh;
+  max-width: 4vh;
   
 }
-#nav{
+/* #nav{
  
   display: inline;
  justify-items: center;
@@ -42,7 +43,7 @@ margin-right: 1px;
  
   
   
-}
+} */
 /* dropdow site parceiros */
 .btn-drop{
   outline: none;
@@ -109,12 +110,11 @@ align-items: center;
  
   
 }
-body{
-  background-image: url(../_img/background-body.png);
-  
+/* body{
+  /* background-image: url(../_img/background-body.png);
+   */
 
-  
-}
+*/
 /* configuraçao da section  */
 section{
   height:1200px;
@@ -218,6 +218,16 @@ background-color: #000;
    gap: 2rem;
     margin-left: 25%;
   }
+  @media (max-width:350px){
+    header{
+      width: 100%;
+    }
+    article{
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }
+
   .flipper{
     width: 100%;
     height: 100%;
@@ -247,10 +257,11 @@ background-color: #000;
   
   .bebidas{
     grid-area: bebidas;
+    
   }
   .bebidas:hover .flipper{
     transform: rotateY(180deg);
-    transition: 1.5s;
+    transition: 2s;
   }
   .flipper{
     width: 100%;
