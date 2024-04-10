@@ -114,10 +114,14 @@ align-items: center;
   /* background-image: url(../_img/background-body.png);
    */
 
-*/
 /* configuraçao da section  */
+body{
+width: auto;
+height: auto;
+  
+}
 section{
-  height:1200px;
+  height:1050px;
   width: 100%;
   
 }
@@ -138,8 +142,8 @@ section{
 }
 .pesquisa{
   
-  max-width: 20%;
-  height: 10%;
+  width: 20%;
+  height: 100%;
   border:2px solid #fff;
   margin-inline: 35%;
   margin-top: 2%;
@@ -147,7 +151,7 @@ section{
 
 }
 #buscar{
-  width: 90%;
+  width: 89%;
   height: 100%;
 outline: none;
 border: none;
@@ -158,13 +162,13 @@ font-size: 20px;
 
 }
 #imgbuscar{
-  max-width: 10%;
-  height: 100%;
+  width: 11.01%;
+  height: 2.6vh;
   float: right;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   background-color: #fff;
-  padding-right: 2%;
+  padding-right: 1%;
 }
 /* itens do banner */
 .itensb{
@@ -172,9 +176,10 @@ font-size: 20px;
   text-align: center;
   margin-top: 10%;
   margin-left: 2%;
-
+  font-size: clamp(1.2vh, 0.2vh,0.2vh);
 }
 .itens{
+  
   color: #fff;
   text-decoration: none;
   padding: 1%;
@@ -186,6 +191,7 @@ font-size: 20px;
   margin-left: -15px;
 }
 .itens:hover{
+  
  
 background-color: #000;
   border-bottom: 3px solid #ff5757;
@@ -217,16 +223,10 @@ background-color: #000;
    margin-top: 2%;
    gap: 2rem;
     margin-left: 25%;
+    height: 100%;
   }
-  @media (max-width:350px){
-    header{
-      width: 100%;
-    }
-    article{
-      display: grid;
-      grid-template-columns: auto;
-    }
-  }
+ 
+  
 
   .flipper{
     width: 100%;
@@ -254,15 +254,22 @@ background-color: #000;
   .back{
     transform: rotateY(180deg);
   }
-  
+  /*configuração das divs grid 1 de bebidas */
   .bebidas{
     grid-area: bebidas;
+    grid-template-columns: repeat(auto-fit ,minmax(200px,1fr));
+    gap: 2rem;
     
   }
+  
   .bebidas:hover .flipper{
     transform: rotateY(180deg);
     transition: 2s;
   }
+  .bebidas > img{
+    width: max-content;
+  }
+  /* configuração das imagens em flipeer */
   .flipper{
     width: 100%;
     height: 100%;
@@ -274,6 +281,8 @@ background-color: #000;
     height: 500px;
     perspective: 1000px;
     grid-area: acessorios;
+    grid-template-columns: repeat(auto-fit ,minmax(200px,1fr));
+    gap: 2rem;
   }
   .acessorios:hover .flipper{
     transform: rotateY(180deg);
