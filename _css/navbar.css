@@ -18,7 +18,7 @@ padding-right: 2vw;
 
 
 .barraDeNavegaçao a {
-  float: left;
+  float: none;
   display: inline-block;
   color: #fff;
   text-align: center;
