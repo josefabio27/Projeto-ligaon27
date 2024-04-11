@@ -73,6 +73,9 @@ padding-right: 2vw;
   display: block;
 }
 
-.login:last-child {
-  float: right;
+.restodoconteudo {
+  justify-content: end;
+  
+ 
 }
+
