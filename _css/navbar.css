@@ -73,9 +73,15 @@ padding-right: 2vw;
   display: block;
 }
 
-.restodoconteudo {
+.restodoconteudo{
   justify-content: end;
+  text-align: end;
+  padding-top: 1vh;
+  
   
  
+}
+.sobre,.login{
+  font-family: inherit;
 }
 
