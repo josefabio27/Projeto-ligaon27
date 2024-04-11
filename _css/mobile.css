@@ -1,13 +1,11 @@
 
 @media (max-width:600px){
 article{
-  display:flex;
+  display: inline-block;
   justify-content: center;
   height: 100%;
   flex-wrap: wrap;
   margin: 0;
 }
-.flipper{
-display: block;
-}
+
 }
