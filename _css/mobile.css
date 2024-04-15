@@ -1,11 +1,9 @@
 
 @media (max-width:600px){
 article{
-  display: inline-block;
-  justify-content: center;
-  height: 100%;
+  display: flex;
   flex-wrap: wrap;
-  margin: 0;
+ columns: unset;
 }
 
 }
