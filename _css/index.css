@@ -267,10 +267,10 @@ background-color: #000;
   
   /* configuração das imagens em flipeer */
   .flipper{
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     transition: transform 0.8s;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d; */
   }
   .acessorios{
     
