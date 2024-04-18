@@ -115,17 +115,14 @@ align-items: center;
    */
 
 /* configuraçao da section  */
-body{
-width: auto;
-height: 100%;
-  
-}
+
 section{
-  height:1050px;
-  width: 100%;
+  
+  
   
 }
 .banner{
+ grid-row: 1;
   height: 60%;
     max-width: 100%;
     background-position: center;
@@ -209,22 +206,16 @@ background-color: #000;
   }
   /* configuração/formatação do article */
   article{
+   
     display: grid;
     grid-template-areas: "bebidas acessorios"
     "ofertas ofertas"
     "roupas salgados"
-    " rodape rodape"
-    "video video";
+    " rodape rodape";
     
-    max-width: 1020px;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit ,minmax(200px,1fr));
-    column-gap: 30px;
-    row-gap: 2px;
-   margin-top: 2%;
-  
-    margin-left: 25%;
-    height: 1100px;
+    
+    
+    
   }
  
   
@@ -239,27 +230,8 @@ background-color: #000;
     
   }
   /* media query para deixar site responsivo */
-  @media (max-width:600px){
-    article{
-      max-width: 200px;
-      display:-webkit-flex;
-      margin-left: 0%;
-      
-    }
-    .flipper{
-      max-width: 100%;
-     
-    }
-    .front img , .back img{
-      max-width: 300px;
-      max-height: 300px;
-    }
-    .front, .back{
-      max-width: 300px;
-      max-height: 300px;
-
-    }
-  }
+  
+  
   /* fim do media */
   .front, .back{
    
@@ -282,7 +254,7 @@ background-color: #000;
   .bebidas{
     grid-area: bebidas;
    
-    gap: 2rem;
+  
     
   }
   
@@ -290,9 +262,9 @@ background-color: #000;
     transform: rotateY(180deg);
     transition: 2s;
   }
-  .bebidas > img{
-    width: max-content;
-  }
+   
+   
+  
   /* configuração das imagens em flipeer */
   .flipper{
     width: 100%;
@@ -301,37 +273,34 @@ background-color: #000;
     transform-style: preserve-3d;
   }
   .acessorios{
-    width: 500px;
-    height: 500px;
-    perspective: 1000px;
-    grid-area: acessorios;
-    grid-template-columns: repeat(auto-fit ,minmax(200px,1fr));
-    gap: 2rem;
+    
+  grid-area: acessorios;
+   
   }
   .acessorios:hover .flipper{
     transform: rotateY(180deg);
     transition: 1.5s;
   }
-  .ofertas{
-    grid-area: ofertas;
-    width: 1000px;
-    margin-left: -30px;
+  .ofertas {
+  
+   
+  
     
   }
   .ofertas:hover .flipper{
     transform: rotateY(180deg);
   }
   .roupas{
-    grid-area: roupas;
-    margin-top:110%
+    grid-area:roupas;
+   
   }
   .roupas:hover .flipper{
     transform: rotateY(180deg);
     transition: 1.5s;
   }
 .salgados{
-    grid-area: salgados;
-    margin-top:110%
+    grid-area:salgados;
+  
   }
   .salgados:hover .flipper{
     transform: rotateY(180deg);
@@ -344,62 +313,7 @@ background-color: #000;
   /* fim da formatação do article */
 
 
-footer{
- grid-area: rodape;
- margin-top: 500px;
- 
- 
+
   
-  background-color: #000;
-  height:20%;
-  
-}
-
-footer img{
-  height: 30px;
-  margin-left: 3%;
-  margin-top: 80px;
- 
-  
-}
-
-a{
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-  margin: -1.6%;
-  margin-left: 5%;
-  
- 
-}
-
-.sociais{
-  display: flex;
-  flex-direction: column;
-  
-  
-}
-
-.picture-facebook{
-  margin-left: 0.8%;
- 
-
-}
-
-.picture-instagram{
-  margin-left: 3.4%;
-}
-
-.picture-whatssap{
-  margin-left: 2.6%;
-  margin-top: 10px;
-}
 
 
-#facebook{
-  margin-left: 3%;
-}
-
-#whatssap{
-  margin-top: 2%;
-}

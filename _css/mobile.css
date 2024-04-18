@@ -1,9 +1,50 @@
 
 @media (max-width:600px){
+    
+.navbar{
+  width: 100%;
+}
+section{
+ /* display: blo; */
+ place-content: center;
+}
 article{
-  display: flex;
-  flex-wrap: wrap;
- columns: unset;
+ background-color: aqua;
+
+  max-width:100%;
+  max-height: 100%;
+  gap:1px;
+
+ 
+  
+  
+}
+.flipper{
+  max-width: 300px;
+max-height: 300px;
+
+}
+.front img , .back img{
+  max-width:200px ;
+  
+  max-height: 300px;
+ 
+}
+.front, .back{
+
+
+}
+.acessorios{
+  max-width: 300px;
+  max-height: 300px;
 }
 
+.bebidas{
+max-width: 300px;
+max-height: 300px;
+}
+.ofertas{
+max-width: 300px;
+max-height: 300px;
+}
 }
