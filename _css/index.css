@@ -209,11 +209,10 @@ background-color: #000;
   article{
    
     display: grid;
-    grid-template-areas: "bebidas acessorios"
+    grid-template-areas: "bebidas acessorios" 
     "ofertas ofertas"
-    "roupas salgados"
-    " rodape rodape";
-    
+    " roupas salgados"
+    "video video";
     
     
     
@@ -240,7 +239,7 @@ background-color: #000;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    position: absolute;
+    /* position: absolute; */
   
   }
   
@@ -251,9 +250,12 @@ background-color: #000;
   .back{
     transform: rotateY(180deg);
   }
+  .front{
+    position: relative;
+  }
   /*configuração das divs grid 1 de bebidas */
   .bebidas{
-    grid-area: bebidas;
+    grid-row:1;
    
   
     
@@ -275,7 +277,8 @@ background-color: #000;
   }
   .acessorios{
     
-  grid-area: acessorios;
+  grid-row:2;
+ 
    
   }
   .acessorios:hover .flipper{
@@ -283,8 +286,8 @@ background-color: #000;
     transition: 1.5s;
   }
   .ofertas {
-  
-   grid-area: ofertas;
+ 
+   grid-row: 3;
   
     
   }
@@ -292,15 +295,16 @@ background-color: #000;
     transform: rotateY(180deg);
   }
   .roupas{
-    grid-area:roupas;
-   
+
+    grid-row: 4;
   }
   .roupas:hover .flipper{
     transform: rotateY(180deg);
     transition: 1.5s;
   }
 .salgados{
-    grid-area:salgados;
+ grid-row: 5;
+ max-width: 100%;
   
   }
   .salgados:hover .flipper{
